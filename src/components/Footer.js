@@ -4,13 +4,19 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        Made by: <a href="https://github.com/erinsophie" target="_blank"> erinsophie
-        </a> | <a href="https://github.com/erinsophie/airbnb-clone" target="_blank"> Source </a>
+        Made by:{' '}
+        <a href="https://github.com/erinsophie" target="_blank">
+          {' '}
+          erinsophie
+        </a>{' '}
+        |{' '}
+        <a href="https://github.com/erinsophie/airbnb-clone" target="_blank">
+          {' '}
+          Source{' '}
+        </a>
       </p>
     </footer>
   );
 }
 
 export default Footer;
-
-

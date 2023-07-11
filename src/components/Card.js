@@ -10,12 +10,11 @@ function Card(props) {
 
   return (
     <div className="card">
-
       <div className="card-image-container">
-      {badgeText && <div className="card-badge">{badgeText}</div>}
-      
+        {badgeText && <div className="card-badge">{badgeText}</div>}
+
         <img
-          src={`/img/${props.coverImg}`}
+          src={process.env.PUBLIC_URL + `/img/${props.coverImg}`}
           alt="experience"
           className="card-image"
         />
