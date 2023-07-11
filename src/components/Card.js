@@ -22,7 +22,11 @@ function Card(props) {
       </div>
 
       <div className="card-stats">
-        <img src="/img/star-icon.png" alt="star icon" className="star-icon" />
+        <img
+          src={process.env.PUBLIC_URL + '/img/star-icon.png'}
+          alt="star icon"
+          className="star-icon"
+        />
         <span>{props.stats.rating}</span>
         <span className="gray">({props.stats.reviewCount}) • </span>
         <span className="gray">{props.location}</span>
