@@ -1,0 +1,202 @@
+/* css reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* general */
+
+.bold {
+    font-weight: bold;
+}
+
+.gray {
+    color: #918E9B;
+}
+
+section {
+    padding: 3% 5% 3% 5%;
+}
+
+/* navbar */
+
+.nav-bar {
+    padding: 20px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-photo {
+    width: 100%;
+    align-self: center;
+}
+
+.hero-header{
+    margin: 20px 0 10px 0
+}
+
+/* cards */
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card {
+    width: 175px;
+    font-size: 0.8rem;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-stats {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.card-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.star-icon {
+    height: 14px;
+}
+
+.card-price {
+    margin-top: auto;
+}
+
+.card-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: #FFFFFF;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+.card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: hidden;
+  }
+
+  .card-image-container:hover .card-description{
+    transform: translateY(0);
+  }
+
+/* footer */
+
+.footer {
+    font-size: 0.8rem;
+    background-color: #F1F1F1;
+    margin-top: auto;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* desktop */
+
+@media (min-width: 800px) {
+
+    .hero-photo {
+        max-width: 900px;
+    }
+
+    .hero-header {
+       font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 250px;
+        font-size: 1rem;
+    }
+    
+    .card-image {
+        height: 370px;
+    }
+
+    .footer {
+       font-size: 1rem;
+    }
+}
+
+
+
+
